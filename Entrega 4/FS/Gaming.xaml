@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="FS.Gaming"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FS"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1280">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Name="Ahand1" Height="110" VerticalAlignment="Top" Width="70" Margin="725,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Ahand2" Height="110" VerticalAlignment="Top" Width="70" Margin="645,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Ahand3" Height="110" VerticalAlignment="Top" Width="70" Margin="565,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Ahand4" Height="110" VerticalAlignment="Top" Width="70" Margin="485,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Ahand5" Height="110" VerticalAlignment="Top" Width="70" Margin="405,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Ahand6" Height="110" VerticalAlignment="Top" Width="70" Margin="325,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Ahand7" Height="110" VerticalAlignment="Top" Width="70" Margin="245,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Ahand8" Height="110" VerticalAlignment="Top" Width="70" Margin="165,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Ahand9" Height="110" VerticalAlignment="Top" Width="70" Margin="85,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Ahand10" Height="110" VerticalAlignment="Top" Width="70" Margin="5,660,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="AHero" Height="155" VerticalAlignment="Top" Width="120" Margin="577,535,0,0" RenderTransformOrigin="8.393,-0.505"/>
+
+        <Canvas HorizontalAlignment="Left" Name="Bhand1" Height="110" VerticalAlignment="Top" Width="70" Margin="725,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Bhand2" Height="110" VerticalAlignment="Top" Width="70" Margin="645,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Bhand3" Height="110" VerticalAlignment="Top" Width="70" Margin="565,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Bhand4" Height="110" VerticalAlignment="Top" Width="70" Margin="485,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Bhand5" Height="110" VerticalAlignment="Top" Width="70" Margin="405,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Bhand6" Height="110" VerticalAlignment="Top" Width="70" Margin="325,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Bhand7" Height="110" VerticalAlignment="Top" Width="70" Margin="245,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Bhand8" Height="110" VerticalAlignment="Top" Width="70" Margin="165,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Bhand9" Height="110" VerticalAlignment="Top" Width="70" Margin="85,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="Bhand10" Height="110" VerticalAlignment="Top" Width="70" Margin="5,5,0,0"/>
+        <Canvas HorizontalAlignment="Left" Name="BHero" Height="155" VerticalAlignment="Top" Width="120" Margin="577,75,0,0" RenderTransformOrigin="8.393,-0.505"/>
+
+    </Grid>
+</UserControl>

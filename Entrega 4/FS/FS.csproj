@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{418C281C-09DD-42EF-8818-90632EEC673E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FS</RootNamespace>
+    <AssemblyName>FS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Classes\Game.cs" />
+    <Compile Include="Classes\Spells.cs" />
+    <Page Include="BF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gaming.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HeroSelect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BF.xaml.cs">
+      <DependentUpon>BF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Cards.cs" />
+    <Compile Include="Classes\Field.cs" />
+    <Compile Include="Gaming.xaml.cs">
+      <DependentUpon>Gaming.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HeroSelect.xaml.cs">
+      <DependentUpon>HeroSelect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Minions.cs" />
+    <Compile Include="Classes\Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Pprincipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Bphase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Bphase2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bphase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bphase2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SelectHero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fotofield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Druid.png" />
+    <Resource Include="Images\Hunter.png" />
+    <Resource Include="Images\Mage.png" />
+    <Resource Include="Images\Paladin.png" />
+    <Resource Include="Images\Priest.png" />
+    <Resource Include="Images\Rogue.png" />
+    <Resource Include="Images\Shaman.png" />
+    <Resource Include="Images\Warlock.png" />
+    <Resource Include="Images\Warrior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anduin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Garrosh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guldan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Malfurion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rexxar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uther.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Valeera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jaina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thrall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Garrosh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WHP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bloodfen Raptor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boulderfist Ogre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chillwind Yeti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Core Hound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magma Rager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Murloc Raider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oasis Snapjaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\River Crocolisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\War Golem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wisp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bloodfen Raptor in field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boulderfist Ogre in field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chillwind Yeti in field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Core Hound in field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magma Rager in field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Murloc Raider in field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oasis Snapjaw in field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\River Crocolisk in field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\War Golem in field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wisp in field.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
