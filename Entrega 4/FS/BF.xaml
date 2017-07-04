@@ -28,12 +28,14 @@
         </Style>
 
     </Page.Resources>
-    <Grid>
+    <Grid Name="BFgrid">
         <Grid.Background>
             <ImageBrush ImageSource="Images/fotofield.jpg" />
         </Grid.Background>
         <Label Name ="PopUpJuego" Content="JUGADOR 1 COMIENZA ESTA PARTIDA" HorizontalAlignment="Left" Margin="581,374,0,0" VerticalAlignment="Top"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand1" Height="110" VerticalAlignment="Top" Width="70" Margin="725,660,0,0"/>
-        
+        <Button x:Name="Endbtn" Content="End Turn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="976,336,0,0" Height="60" Click="Endbtn_Click"/>
+
+
+
     </Grid>
 </Page>

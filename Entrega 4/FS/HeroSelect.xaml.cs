@@ -274,7 +274,8 @@ namespace FS
                 Player Player1 = new Player(NameA, c1, DeckOne, FieldOne);
                 Player Player2 = new Player(NameB, c2, DeckTwo, FieldTwo);
                 g.SelectTurns(Player1, Player2);
-                BF p2 = new BF(Player1, Player2, g);
+                Gaming ga = new Gaming();
+                BF p2 = new BF(Player1, Player2, g, ga);
                 MainFrame.Navigate(p2);
             }
             

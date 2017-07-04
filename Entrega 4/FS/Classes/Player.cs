@@ -13,7 +13,7 @@ namespace FS
         public int TotalHealth = 30;
         public int CurrentHealth = 30;
         public int TotalMana = 1;
-        public int CurrentMana = 10;
+        public int CurrentMana = 1;
         public int Armor = 0;
         public int Class;
         public int PlayerNumber = 0;

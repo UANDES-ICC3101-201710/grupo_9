@@ -7,29 +7,67 @@
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="1280">
     <Grid>
-        <Canvas HorizontalAlignment="Left" Name="Ahand1" Height="110" VerticalAlignment="Top" Width="70" Margin="725,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand2" Height="110" VerticalAlignment="Top" Width="70" Margin="645,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand3" Height="110" VerticalAlignment="Top" Width="70" Margin="565,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand4" Height="110" VerticalAlignment="Top" Width="70" Margin="485,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand5" Height="110" VerticalAlignment="Top" Width="70" Margin="405,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand6" Height="110" VerticalAlignment="Top" Width="70" Margin="325,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand7" Height="110" VerticalAlignment="Top" Width="70" Margin="245,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand8" Height="110" VerticalAlignment="Top" Width="70" Margin="165,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand9" Height="110" VerticalAlignment="Top" Width="70" Margin="85,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Ahand10" Height="110" VerticalAlignment="Top" Width="70" Margin="5,660,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="AHero" Height="155" VerticalAlignment="Top" Width="120" Margin="577,535,0,0" RenderTransformOrigin="8.393,-0.505"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
 
-        <Canvas HorizontalAlignment="Left" Name="Bhand1" Height="110" VerticalAlignment="Top" Width="70" Margin="725,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Bhand2" Height="110" VerticalAlignment="Top" Width="70" Margin="645,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Bhand3" Height="110" VerticalAlignment="Top" Width="70" Margin="565,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Bhand4" Height="110" VerticalAlignment="Top" Width="70" Margin="485,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Bhand5" Height="110" VerticalAlignment="Top" Width="70" Margin="405,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Bhand6" Height="110" VerticalAlignment="Top" Width="70" Margin="325,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Bhand7" Height="110" VerticalAlignment="Top" Width="70" Margin="245,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Bhand8" Height="110" VerticalAlignment="Top" Width="70" Margin="165,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Bhand9" Height="110" VerticalAlignment="Top" Width="70" Margin="85,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="Bhand10" Height="110" VerticalAlignment="Top" Width="70" Margin="5,5,0,0"/>
-        <Canvas HorizontalAlignment="Left" Name="BHero" Height="155" VerticalAlignment="Top" Width="120" Margin="577,75,0,0" RenderTransformOrigin="8.393,-0.505"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="108*"></RowDefinition>
+            <RowDefinition Height="159*"></RowDefinition>
+            <RowDefinition Height="133*"></RowDefinition>
+            <RowDefinition Height="133*"></RowDefinition>
+            <RowDefinition Height="159*"></RowDefinition>
+            <RowDefinition Height="108*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Left" Name="Ahand1" Height="88" VerticalAlignment="Top" Width="70" Margin="298,10,0,0" Grid.Column="1" Grid.Row="5"/>
+        <Image HorizontalAlignment="Left" Name="Ahand2" Height="110" VerticalAlignment="Top" Width="70" Margin="218,127,0,0" Grid.Column="1" Grid.Row="4" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Ahand3" Height="110" VerticalAlignment="Top" Width="70" Margin="138,127,0,0" Grid.Column="1" Grid.Row="4" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Ahand4" Height="110" VerticalAlignment="Top" Width="70" Margin="58,127,0,0" Grid.Column="1" Grid.Row="4" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Ahand5" Height="110" VerticalAlignment="Top" Width="70" Margin="405,127,0,0" Grid.ColumnSpan="2" Grid.Row="4" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Ahand6" Height="110" VerticalAlignment="Top" Width="70" Margin="325,127,0,0" Grid.Row="4" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Ahand7" Height="110" VerticalAlignment="Top" Width="70" Margin="245,127,0,0" Grid.Row="4" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Ahand8" Height="110" VerticalAlignment="Top" Width="70" Margin="165,127,0,0" Grid.Row="4" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Ahand9" Height="110" VerticalAlignment="Top" Width="70" Margin="85,127,0,0" Grid.Row="4" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Ahand10" Height="110" VerticalAlignment="Top" Width="70" Margin="5,127,0,0" Grid.Row="4" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="AHero" Height="155" VerticalAlignment="Top" Width="120" Margin="150,2,0,0" RenderTransformOrigin="8.393,-0.505" Grid.Column="1" Grid.Row="4"/>
+
+        <Image HorizontalAlignment="Left" Name="Bhand1" Height="110" VerticalAlignment="Top" Width="70" Margin="298,5,0,0" Grid.Column="1" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Bhand2" Height="110" VerticalAlignment="Top" Width="70" Margin="218,5,0,0" Grid.Column="1" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Bhand3" Height="110" VerticalAlignment="Top" Width="70" Margin="138,5,0,0" Grid.Column="1" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Bhand4" Height="110" VerticalAlignment="Top" Width="70" Margin="58,5,0,0" Grid.Column="1" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Bhand5" Height="110" VerticalAlignment="Top" Width="70" Margin="405,5,0,0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Bhand6" Height="110" VerticalAlignment="Top" Width="70" Margin="325,5,0,0" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Bhand7" Height="110" VerticalAlignment="Top" Width="70" Margin="245,5,0,0" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Bhand8" Height="110" VerticalAlignment="Top" Width="70" Margin="165,5,0,0" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Bhand9" Height="110" VerticalAlignment="Top" Width="70" Margin="85,5,0,0" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="Bhand10" Height="110" VerticalAlignment="Top" Width="70" Margin="5,5,0,0" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Name="BHero" Height="155" VerticalAlignment="Top" Width="120" Margin="150,75,0,0" RenderTransformOrigin="8.393,-0.505" Grid.Column="1" Grid.RowSpan="2"/>
+
+        <Image x:Name="Amana1" Source="Images/Mana.png" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="16,32,0,0" Grid.Column="2" Grid.Row="5"/>
+        <Image x:Name="Amana2" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="37,32,0,0" Grid.Column="2" Grid.Row="5"/>
+        <Image x:Name="Amana3" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="58,32,0,0" Grid.Column="2" Grid.Row="5"/>
+        <Image x:Name="Amana4" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="79,32,0,0" Grid.Column="2" Grid.Row="5"/>
+        <Image x:Name="Amana5" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="100,32,0,0" Grid.Column="2" Grid.Row="5"/>
+        <Image x:Name="Amana6" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="121,32,0,0" Grid.Column="2" Grid.Row="5"/>
+        <Image x:Name="Amana7" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="142,32,0,0" Grid.Column="2" Grid.Row="5"/>
+        <Image x:Name="Amana8" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="163,32,0,0" Grid.Column="2" Grid.Row="5"/>
+        <Image x:Name="Amana9" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="184,32,0,0" Grid.Column="2" Grid.Row="5"/>
+        <Image x:Name="Amana0" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="205,32,0,0" Grid.Column="2" Grid.Row="5"/>
+
+        <Image x:Name="Bmana1" Source="Images/Mana.png" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="1,40,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image x:Name="Bmana2" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="22,40,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image x:Name="Bmana3" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="43,40,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image x:Name="Bmana4" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="64,40,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image x:Name="Bmana5" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="85,40,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image x:Name="Bmana6" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="106,40,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image x:Name="Bmana7" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="127,40,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image x:Name="Bmana8" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="148,40,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image x:Name="Bmana9" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="169,40,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image x:Name="Bmana0" Source="Images/Mana.png" Visibility="Hidden" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="21" Margin="190,40,0,0" Grid.Column="2" Grid.Row="0"/>
+
+
 
     </Grid>
 </UserControl>
